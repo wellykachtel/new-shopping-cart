@@ -66,19 +66,6 @@
       },
   
       {
-        "id": 16,
-        "sku": 10412368723880253,
-        "title": "Short Sleeve T-Shirt",
-        "description": "",
-        "availableSizes": ["XS", "X", "L", "ML", "XL"],
-        "style": "Grey",
-        "price": 75.0,
-        "currencyId": "USD",
-        "currencyFormat": "$",
-        "isFreeShipping": true
-      },
-  
-      {
         "id": 0,
         "sku": 8552515751438644,
         "title": "Cat Tee Black T-Shirt",
