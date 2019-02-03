@@ -2,13 +2,33 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.scss';
+import firebase from './firebase';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      addedProducts: [],
+    };
+  }
+
+  addProduct(prod) {
+    this.state.addedProducts.push(prod);
+    this.setState({
+      addedProducts: this.state.addedProducts,
+    })
+    console.log(this.state);
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-      <ProductRow products={this.props.products} />
+          <ProductRow 
+            addProduct={(prod) => this.addProduct(prod)}
+            products={this.props.products} 
+            fire={firebase}
+          />
         </header>
       </div>
     );
@@ -18,21 +38,37 @@ class ProductRow extends React.Component {
   render() {
     const rows = [];
     this.props.products.forEach((product) => {
-      rows.push(<ProductItem product={product} />);
+      rows.push(
+      <ProductItem 
+        product={product} 
+        addProduct={(product) => this.props.addProduct(product)}/>
+    );
     });
     return (
-      <p>{rows}</p>
+      <div className="shelf-container">{rows}</div>
     )
   }
 }
 
 class ProductItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      prod: this.props.product
+    };
+    console.log(props);
+  }
+  handleAddProduct() {
+    this.props.addProduct(this.state.prod);
+  }
+
     render() {
       const product = this.props.product;
       return (
       <div
         className="shelf-item"
         data-sku={product.sku}
+        onClick={() => this.handleAddProduct()}
       >
         {product.isFreeShipping && (
           <div className="shelf-stopper">Free shipping</div>
@@ -45,7 +81,7 @@ class ProductItem extends React.Component {
           
         />
         <ProductInfo product = {product}/>
-        <div className="shelf-item__buy-btn" /*onClick={() => addProduct(product)}*/>Add to cart</div>
+        <div className="shelf-item__buy-btn">Add to cart</div>
       </div>
           
       )
@@ -57,10 +93,7 @@ class ProductInfo extends React.Component {
     const product = this.props.product;
     let formattedPrice = formatPrice(product.price, product.currencyId);
     return (
-      <div
-        className="shelf-item"
-        data-sku={product.sku}
-      >
+      <div>
         <p className="shelf-item__title">{product.title}</p>
         <div className="shelf-item__price">
           <div className="val">
@@ -79,11 +112,9 @@ class ProductPicture extends React.Component {
     return(
       <div className={this.props.classes}>
         <img 
-          /*src={import(`./static/${this.props.sku}_1.jpg`)}*/
+          src={require(`./static/${this.props.sku}_1.jpg`)}
           alt={this.props.alt} 
           title={this.props.title} />
-          <br />
-          sku = {this.props.sku}
       </div>
     );
   }

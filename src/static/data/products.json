@@ -2,7 +2,7 @@
     "products": [
       {
         "id": 12,
-        "sku": 12064273040195392,
+        "sku": 1206427304,
         "title": "Cat Tee Black T-Shirt",
         "description": "4 MSL",
         "availableSizes": ["S", "XS"],
@@ -15,7 +15,7 @@
   
       {
         "id": 13,
-        "sku": 51498472915966366,
+        "sku": 5149847291,
         "title": "Dark Thug Blue-Navy T-Shirt",
         "description": "",
         "availableSizes": ["M"],
@@ -28,7 +28,7 @@
   
       {
         "id": 14,
-        "sku": 10686354557628303,
+        "sku": 1068635455,
         "title": "Sphynx Tie Dye Wine T-Shirt",
         "description": "GPX Poly 1",
         "availableSizes": ["X", "L", "XL"],
@@ -41,7 +41,7 @@
   
       {
         "id": 15,
-        "sku": 11033926921508487,
+        "sku": 1103392692,
         "title": "Skuul",
         "description": "Treino 2014",
         "availableSizes": ["X", "L", "XL", "XXL"],
@@ -54,7 +54,7 @@
   
       {
         "id": 11,
-        "sku": 39876704341265606,
+        "sku": 3987670434,
         "title": "Wine Skul T-Shirt",
         "description": "",
         "availableSizes": ["X", "L"],
@@ -67,7 +67,7 @@
   
       {
         "id": 0,
-        "sku": 8552515751438644,
+        "sku": 8552515751,
         "title": "Cat Tee Black T-Shirt",
         "description": "14/15 s/nº",
         "availableSizes": ["X", "L", "XL", "XXL"],
@@ -80,7 +80,7 @@
   
       {
         "id": 1,
-        "sku": 18644119330491312,
+        "sku": 1864411933,
         "title": "Sphynx Tie Dye Grey T-Shirt",
         "description": "14/15 s/nº",
         "availableSizes": ["X", "L", "XL", "XXL"],
@@ -93,7 +93,7 @@
   
       {
         "id": 2,
-        "sku": 11854078013954528,
+        "sku": 1185407801,
         "title": "Danger Knife Grey",
         "description": "14/15 s/nº",
         "availableSizes": ["X", "L"],
@@ -106,7 +106,7 @@
   
       {
         "id": 3,
-        "sku": 876661122392077,
+        "sku": 8766611223,
         "title": "White DGK Script Tee",
         "description": "2014 s/nº",
         "availableSizes": ["X", "L"],
@@ -119,7 +119,7 @@
   
       {
         "id": 4,
-        "sku": 9197907543445677,
+        "sku": 9197907543,
         "title": "Born On The Streets",
         "description": "14/15 s/nº - Jogador",
         "availableSizes": ["XL"],
@@ -132,7 +132,7 @@
   
       {
         "id": 5,
-        "sku": 10547961582846888,
+        "sku": 1054796158,
         "title": "Tso 3D Short Sleeve T-Shirt A",
         "description": "14/15 + Camiseta 1º Mundial",
         "availableSizes": ["X", "L", "XL"],
@@ -145,7 +145,7 @@
   
       {
         "id": 6,
-        "sku": 6090484789343891,
+        "sku": 6090484789,
         "title": "Man Tie Dye Cinza Grey T-Shirt",
         "description": "Goleiro 13/14",
         "availableSizes": ["XL", "XXL"],
@@ -158,7 +158,7 @@
   
       {
         "id": 7,
-        "sku": 18532669286405342,
+        "sku": 1853266928,
         "title": "Crazy Monkey Black T-Shirt",
         "description": "1977 Infantil",
         "availableSizes": ["S"],
@@ -171,7 +171,7 @@
   
       {
         "id": 8,
-        "sku": 5619496040738316,
+        "sku": 5619496040,
         "title": "Tso 3D Black T-Shirt",
         "description": "",
         "availableSizes": ["XL"],
@@ -184,7 +184,7 @@
   
       {
         "id": 9,
-        "sku": 11600983276356165,
+        "sku": 1160098327,
         "title": "Crazy Monkey Grey",
         "description": "",
         "availableSizes": ["L", "XL"],
@@ -197,7 +197,7 @@
   
       {
         "id": 10,
-        "sku": 27250082398145995,
+        "sku": 2725008239,
         "title": "On The Streets Black T-Shirt",
         "description": "",
         "availableSizes": ["L", "XL"],
